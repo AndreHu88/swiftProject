@@ -32,5 +32,5 @@ class HYHomeNetworkTool: NSObject {
         }
     }
     
-    static func getHomeNewsData(
+    
 }

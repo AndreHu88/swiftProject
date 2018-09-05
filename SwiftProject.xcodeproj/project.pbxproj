@@ -38,6 +38,9 @@
 		B596AB5C213F684500C238EE /* HYHomeTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB5B213F684500C238EE /* HYHomeTitleModel.swift */; };
 		B596AB5E213F6BF500C238EE /* HYHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB5D213F6BF500C238EE /* HYHomeTableViewController.swift */; };
 		B596AB62213F811700C238EE /* TTRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB61213F811700C238EE /* TTRefreshHeader.swift */; };
+		B596AB69213FC4DB00C238EE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB68213FC4DB00C238EE /* UIView+Extension.swift */; };
+		B596AB6B213FC72600C238EE /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB6A213FC72600C238EE /* NSDate+Extension.swift */; };
+		B596AB6D213FD08500C238EE /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB6C213FD08500C238EE /* UIImageView+Extension.swift */; };
 		E306B4533CBF56B9BD41A605 /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,9 @@
 		B596AB5B213F684500C238EE /* HYHomeTitleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYHomeTitleModel.swift; sourceTree = "<group>"; };
 		B596AB5D213F6BF500C238EE /* HYHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYHomeTableViewController.swift; sourceTree = "<group>"; };
 		B596AB61213F811700C238EE /* TTRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRefreshHeader.swift; sourceTree = "<group>"; };
+		B596AB68213FC4DB00C238EE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B596AB6A213FC72600C238EE /* NSDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		B596AB6C213FD08500C238EE /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +205,9 @@
 			isa = PBXGroup;
 			children = (
 				B596AAE6213E543800C238EE /* ColorExtension.swift */,
+				B596AB68213FC4DB00C238EE /* UIView+Extension.swift */,
+				B596AB6A213FC72600C238EE /* NSDate+Extension.swift */,
+				B596AB6C213FD08500C238EE /* UIImageView+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -545,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B596AB5E213F6BF500C238EE /* HYHomeTableViewController.swift in Sources */,
+				B596AB69213FC4DB00C238EE /* UIView+Extension.swift in Sources */,
 				B596AB15213E543900C238EE /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				B596AB19213E543900C238EE /* API_Provider.swift in Sources */,
 				B596AB16213E543900C238EE /* NSSet+HYBUnicodeReadable.m in Sources */,
@@ -566,7 +576,9 @@
 				B596AB1C213E543900C238EE /* HYBaseTableView.swift in Sources */,
 				B596AB18213E543900C238EE /* ColorExtension.swift in Sources */,
 				B596AB1F213E543900C238EE /* HYBaseWebViewController.swift in Sources */,
+				B596AB6D213FD08500C238EE /* UIImageView+Extension.swift in Sources */,
 				B596AB24213E543900C238EE /* HYHomeRecommendVC.swift in Sources */,
+				B596AB6B213FC72600C238EE /* NSDate+Extension.swift in Sources */,
 				B596AB23213E543900C238EE /* HYHomeViewController.swift in Sources */,
 				B596AB17213E543900C238EE /* Foundation+Log.m in Sources */,
 				B596AB27213E543900C238EE /* HYMineViewController.swift in Sources */,
