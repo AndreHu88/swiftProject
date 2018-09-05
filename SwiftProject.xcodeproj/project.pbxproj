@@ -7,21 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B596AAC5213E539500C238EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAC4213E539500C238EE /* AppDelegate.swift */; };
-		B596AAC7213E539500C238EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAC6213E539500C238EE /* ViewController.swift */; };
-		B596AACA213E539500C238EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B596AAC8213E539500C238EE /* Main.storyboard */; };
 		B596AACC213E539700C238EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B596AACB213E539700C238EE /* Assets.xcassets */; };
-		B596AACF213E539700C238EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B596AACD213E539700C238EE /* LaunchScreen.storyboard */; };
+		B596AB12213E543900C238EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD8213E543800C238EE /* Const.swift */; };
+		B596AB13213E543900C238EE /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD9213E543800C238EE /* WebApi.swift */; };
+		B596AB14213E543900C238EE /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = B596AADD213E543800C238EE /* NSArray+HYBUnicodeReadable.m */; };
+		B596AB15213E543900C238EE /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = B596AADE213E543800C238EE /* NSDictionary+HYBUnicodeReadable.m */; };
+		B596AB16213E543900C238EE /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = B596AADF213E543800C238EE /* NSSet+HYBUnicodeReadable.m */; };
+		B596AB17213E543900C238EE /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE4213E543800C238EE /* Foundation+Log.m */; };
+		B596AB18213E543900C238EE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE6213E543800C238EE /* ColorExtension.swift */; };
+		B596AB19213E543900C238EE /* API_Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE8213E543800C238EE /* API_Provider.swift */; };
+		B596AB1A213E543900C238EE /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE9213E543800C238EE /* HttpRequest.swift */; };
+		B596AB1B213E543900C238EE /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B596AAEA213E543800C238EE /* data.plist */; };
+		B596AB1C213E543900C238EE /* HYBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAF0213E543900C238EE /* HYBaseTableView.swift */; };
+		B596AB1D213E543900C238EE /* HYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAF2213E543900C238EE /* HYBaseViewController.swift */; };
+		B596AB1E213E543900C238EE /* HYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAF3213E543900C238EE /* HYTabBarController.swift */; };
+		B596AB1F213E543900C238EE /* HYBaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAF4213E543900C238EE /* HYBaseWebViewController.swift */; };
+		B596AB20213E543900C238EE /* HYBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAF5213E543900C238EE /* HYBaseTableViewController.swift */; };
+		B596AB21213E543900C238EE /* HYBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAF6213E543900C238EE /* HYBaseNavController.swift */; };
+		B596AB22213E543900C238EE /* HYBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAF8213E543900C238EE /* HYBaseModel.swift */; };
+		B596AB23213E543900C238EE /* HYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAFD213E543900C238EE /* HYHomeViewController.swift */; };
+		B596AB24213E543900C238EE /* HYHomeRecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAFE213E543900C238EE /* HYHomeRecommendVC.swift */; };
+		B596AB25213E543900C238EE /* HYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB03213E543900C238EE /* HYVideoViewController.swift */; };
+		B596AB26213E543900C238EE /* HYLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB08213E543900C238EE /* HYLoginViewController.swift */; };
+		B596AB27213E543900C238EE /* HYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB09213E543900C238EE /* HYMineViewController.swift */; };
+		B596AB28213E543900C238EE /* HYUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB0B213E543900C238EE /* HYUserModel.swift */; };
+		B596AB2A213E543900C238EE /* HYLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB0E213E543900C238EE /* HYLoginView.swift */; };
+		B596AB2B213E543900C238EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB10213E543900C238EE /* AppDelegate.swift */; };
+		B596AB2C213E543900C238EE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B596AB11213E543900C238EE /* Info.plist */; };
+		B596AB5A213E746800C238EE /* HYHomeNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB59213E746800C238EE /* HYHomeNetworkTool.swift */; };
+		B596AB5C213F684500C238EE /* HYHomeTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB5B213F684500C238EE /* HYHomeTitleModel.swift */; };
+		B596AB5E213F6BF500C238EE /* HYHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB5D213F6BF500C238EE /* HYHomeTableViewController.swift */; };
+		B596AB62213F811700C238EE /* TTRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB61213F811700C238EE /* TTRefreshHeader.swift */; };
+		E306B4533CBF56B9BD41A605 /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977BC7B3F445CD0C266D5177 /* Pods-SwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject.release.xcconfig"; sourceTree = "<group>"; };
+		9AB9DA9CE8200EAE2BCDE3B1 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B596AAC1213E539500C238EE /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B596AAC4213E539500C238EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B596AAC6213E539500C238EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B596AAC9213E539500C238EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B596AACB213E539700C238EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B596AACE213E539700C238EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B596AAD0213E539700C238EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B596AAD8213E543800C238EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		B596AAD9213E543800C238EE /* WebApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApi.swift; sourceTree = "<group>"; };
+		B596AADD213E543800C238EE /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		B596AADE213E543800C238EE /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		B596AADF213E543800C238EE /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		B596AAE0213E543800C238EE /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		B596AAE1213E543800C238EE /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		B596AAE2213E543800C238EE /* NSSet+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		B596AAE4213E543800C238EE /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		B596AAE6213E543800C238EE /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B596AAE8213E543800C238EE /* API_Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Provider.swift; sourceTree = "<group>"; };
+		B596AAE9213E543800C238EE /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		B596AAEA213E543800C238EE /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		B596AAF0213E543900C238EE /* HYBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYBaseTableView.swift; sourceTree = "<group>"; };
+		B596AAF2213E543900C238EE /* HYBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYBaseViewController.swift; sourceTree = "<group>"; };
+		B596AAF3213E543900C238EE /* HYTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTabBarController.swift; sourceTree = "<group>"; };
+		B596AAF4213E543900C238EE /* HYBaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYBaseWebViewController.swift; sourceTree = "<group>"; };
+		B596AAF5213E543900C238EE /* HYBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYBaseTableViewController.swift; sourceTree = "<group>"; };
+		B596AAF6213E543900C238EE /* HYBaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYBaseNavController.swift; sourceTree = "<group>"; };
+		B596AAF8213E543900C238EE /* HYBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYBaseModel.swift; sourceTree = "<group>"; };
+		B596AAFD213E543900C238EE /* HYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYHomeViewController.swift; sourceTree = "<group>"; };
+		B596AAFE213E543900C238EE /* HYHomeRecommendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYHomeRecommendVC.swift; sourceTree = "<group>"; };
+		B596AB03213E543900C238EE /* HYVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYVideoViewController.swift; sourceTree = "<group>"; };
+		B596AB08213E543900C238EE /* HYLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLoginViewController.swift; sourceTree = "<group>"; };
+		B596AB09213E543900C238EE /* HYMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMineViewController.swift; sourceTree = "<group>"; };
+		B596AB0B213E543900C238EE /* HYUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYUserModel.swift; sourceTree = "<group>"; };
+		B596AB0E213E543900C238EE /* HYLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLoginView.swift; sourceTree = "<group>"; };
+		B596AB10213E543900C238EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B596AB11213E543900C238EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B596AB32213E66FD00C238EE /* SwiftProject-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftProject-bridging-Header.h"; sourceTree = "<group>"; };
+		B596AB59213E746800C238EE /* HYHomeNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYHomeNetworkTool.swift; sourceTree = "<group>"; };
+		B596AB5B213F684500C238EE /* HYHomeTitleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYHomeTitleModel.swift; sourceTree = "<group>"; };
+		B596AB5D213F6BF500C238EE /* HYHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYHomeTableViewController.swift; sourceTree = "<group>"; };
+		B596AB61213F811700C238EE /* TTRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRefreshHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E306B4533CBF56B9BD41A605 /* Pods_SwiftProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39508B3848D0DB524952AB96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81A4E466930F8345C384BF39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9DA9CE8200EAE2BCDE3B1 /* Pods-SwiftProject.debug.xcconfig */,
+				977BC7B3F445CD0C266D5177 /* Pods-SwiftProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B596AAB8213E539500C238EE = {
 			isa = PBXGroup;
 			children = (
 				B596AAC3213E539500C238EE /* SwiftProject */,
 				B596AAC2213E539500C238EE /* Products */,
+				81A4E466930F8345C384BF39 /* Pods */,
+				39508B3848D0DB524952AB96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +133,283 @@
 		B596AAC3213E539500C238EE /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
-				B596AAC4213E539500C238EE /* AppDelegate.swift */,
-				B596AAC6213E539500C238EE /* ViewController.swift */,
-				B596AAC8213E539500C238EE /* Main.storyboard */,
+				B596AAEE213E543900C238EE /* Base */,
+				B596AAFA213E543900C238EE /* Module */,
+				B596AADA213E543800C238EE /* Utils */,
+				B596AAD6213E543800C238EE /* Config */,
+				B596AB0F213E543900C238EE /* AppDelegate */,
 				B596AACB213E539700C238EE /* Assets.xcassets */,
-				B596AACD213E539700C238EE /* LaunchScreen.storyboard */,
-				B596AAD0213E539700C238EE /* Info.plist */,
 			);
 			path = SwiftProject;
+			sourceTree = "<group>";
+		};
+		B596AAD6213E543800C238EE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAD8213E543800C238EE /* Const.swift */,
+				B596AAD9213E543800C238EE /* WebApi.swift */,
+				B596AB32213E66FD00C238EE /* SwiftProject-bridging-Header.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B596AADA213E543800C238EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAE5213E543800C238EE /* Category */,
+				B596AADB213E543800C238EE /* ChineseLog */,
+				B596AAEB213E543800C238EE /* EmotionInputView */,
+				B596AAE7213E543800C238EE /* NetWork */,
+				B596AB60213F807B00C238EE /* Util */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B596AADB213E543800C238EE /* ChineseLog */ = {
+			isa = PBXGroup;
+			children = (
+				B596AADC213E543800C238EE /* HYBUnicodeReadable */,
+				B596AAE3213E543800C238EE /* ShowChinese */,
+			);
+			path = ChineseLog;
+			sourceTree = "<group>";
+		};
+		B596AADC213E543800C238EE /* HYBUnicodeReadable */ = {
+			isa = PBXGroup;
+			children = (
+				B596AADD213E543800C238EE /* NSArray+HYBUnicodeReadable.m */,
+				B596AADE213E543800C238EE /* NSDictionary+HYBUnicodeReadable.m */,
+				B596AADF213E543800C238EE /* NSSet+HYBUnicodeReadable.m */,
+				B596AAE0213E543800C238EE /* NSArray+HYBUnicodeReadable.h */,
+				B596AAE1213E543800C238EE /* NSDictionary+HYBUnicodeReadable.h */,
+				B596AAE2213E543800C238EE /* NSSet+HYBUnicodeReadable.h */,
+			);
+			path = HYBUnicodeReadable;
+			sourceTree = "<group>";
+		};
+		B596AAE3213E543800C238EE /* ShowChinese */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAE4213E543800C238EE /* Foundation+Log.m */,
+			);
+			path = ShowChinese;
+			sourceTree = "<group>";
+		};
+		B596AAE5213E543800C238EE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAE6213E543800C238EE /* ColorExtension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B596AAE7213E543800C238EE /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAE8213E543800C238EE /* API_Provider.swift */,
+				B596AAE9213E543800C238EE /* HttpRequest.swift */,
+				B596AB59213E746800C238EE /* HYHomeNetworkTool.swift */,
+				B596AAEA213E543800C238EE /* data.plist */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		B596AAEB213E543800C238EE /* EmotionInputView */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAEC213E543900C238EE /* Model */,
+				B596AAED213E543900C238EE /* View */,
+			);
+			path = EmotionInputView;
+			sourceTree = "<group>";
+		};
+		B596AAEC213E543900C238EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B596AAED213E543900C238EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B596AAEE213E543900C238EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAEF213E543900C238EE /* BaseView */,
+				B596AAF1213E543900C238EE /* BaseViewController */,
+				B596AAF7213E543900C238EE /* BaseModel */,
+				B596AAF9213E543900C238EE /* BaseComponent */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B596AAEF213E543900C238EE /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAF0213E543900C238EE /* HYBaseTableView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		B596AAF1213E543900C238EE /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAF2213E543900C238EE /* HYBaseViewController.swift */,
+				B596AAF3213E543900C238EE /* HYTabBarController.swift */,
+				B596AAF4213E543900C238EE /* HYBaseWebViewController.swift */,
+				B596AAF5213E543900C238EE /* HYBaseTableViewController.swift */,
+				B596AAF6213E543900C238EE /* HYBaseNavController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		B596AAF7213E543900C238EE /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAF8213E543900C238EE /* HYBaseModel.swift */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		B596AAF9213E543900C238EE /* BaseComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseComponent;
+			sourceTree = "<group>";
+		};
+		B596AAFA213E543900C238EE /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAFB213E543900C238EE /* Home */,
+				B596AB01213E543900C238EE /* Video */,
+				B596AB06213E543900C238EE /* Mine */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B596AAFB213E543900C238EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAFC213E543900C238EE /* Controller */,
+				B596AAFF213E543900C238EE /* Model */,
+				B596AB00213E543900C238EE /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B596AAFC213E543900C238EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B596AAFD213E543900C238EE /* HYHomeViewController.swift */,
+				B596AB5D213F6BF500C238EE /* HYHomeTableViewController.swift */,
+				B596AAFE213E543900C238EE /* HYHomeRecommendVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B596AAFF213E543900C238EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB5B213F684500C238EE /* HYHomeTitleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B596AB00213E543900C238EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B596AB01213E543900C238EE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB02213E543900C238EE /* Controller */,
+				B596AB04213E543900C238EE /* Model */,
+				B596AB05213E543900C238EE /* View */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		B596AB02213E543900C238EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB03213E543900C238EE /* HYVideoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B596AB04213E543900C238EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B596AB05213E543900C238EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B596AB06213E543900C238EE /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB07213E543900C238EE /* Controller */,
+				B596AB0A213E543900C238EE /* Model */,
+				B596AB0D213E543900C238EE /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B596AB07213E543900C238EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB08213E543900C238EE /* HYLoginViewController.swift */,
+				B596AB09213E543900C238EE /* HYMineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B596AB0A213E543900C238EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB0B213E543900C238EE /* HYUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B596AB0D213E543900C238EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB0E213E543900C238EE /* HYLoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B596AB0F213E543900C238EE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB10213E543900C238EE /* AppDelegate.swift */,
+				B596AB11213E543900C238EE /* Info.plist */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B596AB60213F807B00C238EE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B596AB61213F811700C238EE /* TTRefreshHeader.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +419,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B596AAD3213E539700C238EE /* Build configuration list for PBXNativeTarget "SwiftProject" */;
 			buildPhases = (
+				821610C346CCA88C04EC8102 /* [CP] Check Pods Manifest.lock */,
 				B596AABD213E539500C238EE /* Sources */,
 				B596AABE213E539500C238EE /* Frameworks */,
 				B596AABF213E539500C238EE /* Resources */,
+				7FF9C231358074E736D34206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,44 +472,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B596AACF213E539700C238EE /* LaunchScreen.storyboard in Resources */,
+				B596AB1B213E543900C238EE /* data.plist in Resources */,
 				B596AACC213E539700C238EE /* Assets.xcassets in Resources */,
-				B596AACA213E539500C238EE /* Main.storyboard in Resources */,
+				B596AB2C213E543900C238EE /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FF9C231358074E736D34206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		821610C346CCA88C04EC8102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B596AABD213E539500C238EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B596AAC7213E539500C238EE /* ViewController.swift in Sources */,
-				B596AAC5213E539500C238EE /* AppDelegate.swift in Sources */,
+				B596AB5E213F6BF500C238EE /* HYHomeTableViewController.swift in Sources */,
+				B596AB15213E543900C238EE /* NSDictionary+HYBUnicodeReadable.m in Sources */,
+				B596AB19213E543900C238EE /* API_Provider.swift in Sources */,
+				B596AB16213E543900C238EE /* NSSet+HYBUnicodeReadable.m in Sources */,
+				B596AB62213F811700C238EE /* TTRefreshHeader.swift in Sources */,
+				B596AB25213E543900C238EE /* HYVideoViewController.swift in Sources */,
+				B596AB1D213E543900C238EE /* HYBaseViewController.swift in Sources */,
+				B596AB12213E543900C238EE /* Const.swift in Sources */,
+				B596AB21213E543900C238EE /* HYBaseNavController.swift in Sources */,
+				B596AB14213E543900C238EE /* NSArray+HYBUnicodeReadable.m in Sources */,
+				B596AB1A213E543900C238EE /* HttpRequest.swift in Sources */,
+				B596AB2A213E543900C238EE /* HYLoginView.swift in Sources */,
+				B596AB5A213E746800C238EE /* HYHomeNetworkTool.swift in Sources */,
+				B596AB28213E543900C238EE /* HYUserModel.swift in Sources */,
+				B596AB20213E543900C238EE /* HYBaseTableViewController.swift in Sources */,
+				B596AB22213E543900C238EE /* HYBaseModel.swift in Sources */,
+				B596AB2B213E543900C238EE /* AppDelegate.swift in Sources */,
+				B596AB13213E543900C238EE /* WebApi.swift in Sources */,
+				B596AB1E213E543900C238EE /* HYTabBarController.swift in Sources */,
+				B596AB1C213E543900C238EE /* HYBaseTableView.swift in Sources */,
+				B596AB18213E543900C238EE /* ColorExtension.swift in Sources */,
+				B596AB1F213E543900C238EE /* HYBaseWebViewController.swift in Sources */,
+				B596AB24213E543900C238EE /* HYHomeRecommendVC.swift in Sources */,
+				B596AB23213E543900C238EE /* HYHomeViewController.swift in Sources */,
+				B596AB17213E543900C238EE /* Foundation+Log.m in Sources */,
+				B596AB27213E543900C238EE /* HYMineViewController.swift in Sources */,
+				B596AB26213E543900C238EE /* HYLoginViewController.swift in Sources */,
+				B596AB5C213F684500C238EE /* HYHomeTitleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B596AAC8213E539500C238EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B596AAC9213E539500C238EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B596AACD213E539700C238EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B596AACE213E539700C238EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B596AAD1213E539700C238EE /* Debug */ = {
@@ -278,17 +694,21 @@
 		};
 		B596AAD4213E539700C238EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB9DA9CE8200EAE2BCDE3B1 /* Pods-SwiftProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44G4TBW28S;
-				INFOPLIST_FILE = SwiftProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftProject/AppDelegate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dun.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftProject/Config/SwiftProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +716,21 @@
 		};
 		B596AAD5213E539700C238EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977BC7B3F445CD0C266D5177 /* Pods-SwiftProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44G4TBW28S;
-				INFOPLIST_FILE = SwiftProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftProject/AppDelegate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dun.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftProject/Config/SwiftProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
