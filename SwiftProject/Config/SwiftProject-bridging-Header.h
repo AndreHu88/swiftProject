@@ -10,5 +10,6 @@
 #define SwiftProject_bridging_Header_h
 
 
+#import "JRToast.h"
 
 #endif /* SwiftProject_bridging_Header_h */

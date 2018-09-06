@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B57959EE214120310019A85A /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959ED214120310019A85A /* MBProgressHUD+Extension.swift */; };
+		B57959F2214127E80019A85A /* JRToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B57959F0214127E80019A85A /* JRToast.m */; };
+		B57959F421412FD10019A85A /* HYNetworkStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959F321412FD10019A85A /* HYNetworkStateManager.swift */; };
 		B596AACC213E539700C238EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B596AACB213E539700C238EE /* Assets.xcassets */; };
 		B596AB12213E543900C238EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD8213E543800C238EE /* Const.swift */; };
 		B596AB13213E543900C238EE /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD9213E543800C238EE /* WebApi.swift */; };
@@ -41,6 +44,9 @@
 		B596AB69213FC4DB00C238EE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB68213FC4DB00C238EE /* UIView+Extension.swift */; };
 		B596AB6B213FC72600C238EE /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB6A213FC72600C238EE /* NSDate+Extension.swift */; };
 		B596AB6D213FD08500C238EE /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB6C213FD08500C238EE /* UIImageView+Extension.swift */; };
+		B596AB6F2140C21700C238EE /* HYHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB6E2140C21700C238EE /* HYHomeTableViewCell.swift */; };
+		B596AB712140D28D00C238EE /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB702140D28D00C238EE /* NewsModel.swift */; };
+		B596AB7321410BBE00C238EE /* HYNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB7221410BBE00C238EE /* HYNetworkModel.swift */; };
 		E306B4533CBF56B9BD41A605 /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +54,10 @@
 		57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977BC7B3F445CD0C266D5177 /* Pods-SwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject.release.xcconfig"; sourceTree = "<group>"; };
 		9AB9DA9CE8200EAE2BCDE3B1 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B57959ED214120310019A85A /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
+		B57959F0214127E80019A85A /* JRToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRToast.m; sourceTree = "<group>"; };
+		B57959F1214127E80019A85A /* JRToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRToast.h; sourceTree = "<group>"; };
+		B57959F321412FD10019A85A /* HYNetworkStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYNetworkStateManager.swift; sourceTree = "<group>"; };
 		B596AAC1213E539500C238EE /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B596AACB213E539700C238EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B596AAD8213E543800C238EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -87,6 +97,9 @@
 		B596AB68213FC4DB00C238EE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B596AB6A213FC72600C238EE /* NSDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		B596AB6C213FD08500C238EE /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B596AB6E2140C21700C238EE /* HYHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYHomeTableViewCell.swift; sourceTree = "<group>"; };
+		B596AB702140D28D00C238EE /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		B596AB7221410BBE00C238EE /* HYNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYNetworkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +129,15 @@
 				977BC7B3F445CD0C266D5177 /* Pods-SwiftProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B57959EF214127BA0019A85A /* OCTool */ = {
+			isa = PBXGroup;
+			children = (
+				B57959F1214127E80019A85A /* JRToast.h */,
+				B57959F0214127E80019A85A /* JRToast.m */,
+			);
+			path = OCTool;
 			sourceTree = "<group>";
 		};
 		B596AAB8213E539500C238EE = {
@@ -162,6 +184,7 @@
 		B596AADA213E543800C238EE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B57959EF214127BA0019A85A /* OCTool */,
 				B596AAE5213E543800C238EE /* Category */,
 				B596AADB213E543800C238EE /* ChineseLog */,
 				B596AAEB213E543800C238EE /* EmotionInputView */,
@@ -208,6 +231,7 @@
 				B596AB68213FC4DB00C238EE /* UIView+Extension.swift */,
 				B596AB6A213FC72600C238EE /* NSDate+Extension.swift */,
 				B596AB6C213FD08500C238EE /* UIImageView+Extension.swift */,
+				B57959ED214120310019A85A /* MBProgressHUD+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -281,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				B596AAF8213E543900C238EE /* HYBaseModel.swift */,
+				B596AB7221410BBE00C238EE /* HYNetworkModel.swift */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -326,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				B596AB5B213F684500C238EE /* HYHomeTitleModel.swift */,
+				B596AB702140D28D00C238EE /* NewsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +359,7 @@
 		B596AB00213E543900C238EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B596AB6E2140C21700C238EE /* HYHomeTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -417,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				B596AB61213F811700C238EE /* TTRefreshHeader.swift */,
+				B57959F321412FD10019A85A /* HYNetworkStateManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -449,6 +477,7 @@
 		B596AAB9213E539500C238EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HY;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Duntech;
@@ -503,6 +532,7 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -517,6 +547,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -554,13 +585,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B596AB5E213F6BF500C238EE /* HYHomeTableViewController.swift in Sources */,
+				B596AB6F2140C21700C238EE /* HYHomeTableViewCell.swift in Sources */,
 				B596AB69213FC4DB00C238EE /* UIView+Extension.swift in Sources */,
 				B596AB15213E543900C238EE /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				B596AB19213E543900C238EE /* API_Provider.swift in Sources */,
 				B596AB16213E543900C238EE /* NSSet+HYBUnicodeReadable.m in Sources */,
+				B596AB712140D28D00C238EE /* NewsModel.swift in Sources */,
+				B596AB7321410BBE00C238EE /* HYNetworkModel.swift in Sources */,
 				B596AB62213F811700C238EE /* TTRefreshHeader.swift in Sources */,
 				B596AB25213E543900C238EE /* HYVideoViewController.swift in Sources */,
 				B596AB1D213E543900C238EE /* HYBaseViewController.swift in Sources */,
+				B57959F2214127E80019A85A /* JRToast.m in Sources */,
 				B596AB12213E543900C238EE /* Const.swift in Sources */,
 				B596AB21213E543900C238EE /* HYBaseNavController.swift in Sources */,
 				B596AB14213E543900C238EE /* NSArray+HYBUnicodeReadable.m in Sources */,
@@ -573,6 +608,7 @@
 				B596AB2B213E543900C238EE /* AppDelegate.swift in Sources */,
 				B596AB13213E543900C238EE /* WebApi.swift in Sources */,
 				B596AB1E213E543900C238EE /* HYTabBarController.swift in Sources */,
+				B57959EE214120310019A85A /* MBProgressHUD+Extension.swift in Sources */,
 				B596AB1C213E543900C238EE /* HYBaseTableView.swift in Sources */,
 				B596AB18213E543900C238EE /* ColorExtension.swift in Sources */,
 				B596AB1F213E543900C238EE /* HYBaseWebViewController.swift in Sources */,
@@ -582,6 +618,7 @@
 				B596AB23213E543900C238EE /* HYHomeViewController.swift in Sources */,
 				B596AB17213E543900C238EE /* Foundation+Log.m in Sources */,
 				B596AB27213E543900C238EE /* HYMineViewController.swift in Sources */,
+				B57959F421412FD10019A85A /* HYNetworkStateManager.swift in Sources */,
 				B596AB26213E543900C238EE /* HYLoginViewController.swift in Sources */,
 				B596AB5C213F684500C238EE /* HYHomeTitleModel.swift in Sources */,
 			);

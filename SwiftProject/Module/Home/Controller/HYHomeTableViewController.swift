@@ -17,6 +17,8 @@ class HYHomeTableViewController: HYBaseTableViewController {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
         setupRefresh()
+        
+        
     }
     
     func setupRefresh(category : NewsTitleCategory = .recommend) {

@@ -7,11 +7,26 @@
 //
 
 import UIKit
-import SwiftyJSON
+
+//全局导入
+@_exported import HandyJSON
+@_exported import SwiftyJSON
+@_exported import SnapKit
+@_exported import MBProgressHUD
+
 
 import YYKit
 import MJRefresh
+import MBProgressHUD
 
+
+
+func DLog <T> (_ message : T, file : String = #file, lineNumber : Int = #line) {
+    #if DEBUG
+    let fileName = (file as NSString).lastPathComponent
+    print("[\(fileName):line:\(lineNumber)]- \(message)")
+    #endif
+}
 
 // MARK: - 屏幕信息
 /// 屏幕的宽度

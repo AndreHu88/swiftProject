@@ -22,33 +22,41 @@ enum RequestType {
 
 class HttpRequest: NSObject {
     
-    class func post(url : String, parameters : [String : Any]?, complection : @escaping networkComplectionColsure) {
+    class func post(url : String, parameters : [String : Any]?, complection : @escaping (_ networkModel : HYNetworkModel) -> ()) {
         
         HttpRequest.request(requestType:.Post, url: url, parameters: parameters, complection: complection)
     }
     
-   class func get(url : String, parameters : [String : Any]?, complection : @escaping networkComplectionColsure) {
+   class func get(url : String, parameters : [String : Any]?, complection : @escaping (_ networkModel : HYNetworkModel) -> ()) {
     
        HttpRequest.request(requestType:.Get, url: url, parameters: parameters, complection: complection)
     }
     
     
-   class func request(requestType : RequestType, url : String, parameters : [String : Any]?, complection : @escaping networkComplectionColsure) {
+   class func request(requestType : RequestType, url : String, parameters : [String : Any]?, complection : @escaping (_ networkModel : HYNetworkModel) -> ()) {
     
         let requestUrl = api_baseUrl + url
         let method = (requestType == .Get) ? HTTPMethod.get : HTTPMethod.post
+        //先判断当前的网络是否是通的
+    
         Alamofire.request(requestUrl, method: method, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { ( response) in
         
-            switch response.result{
+            switch response.result {
                 
                 case .success(let value):
                     if let dict = value as? [String : AnyObject] {
-                        complection(true, dict, nil)
+                        
+                        let resultModel = HYNetworkModel.deserialize(from: dict)
+                        complection(resultModel!)
                     }
                 
                 case .failure(let error):
-                    complection(false, nil, error)
-                
+                    
+                    JRToast.show(withText: "服务器云游四方去了")
+                    DLog(error.localizedDescription)
+                    let resultModel = HYNetworkModel()
+                    resultModel.error = .responseError
+                    complection(resultModel)
             }
             
         }

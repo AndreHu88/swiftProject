@@ -14,10 +14,12 @@ class HYHomeNetworkTool: NSObject {
     /// 获取首页title数组
     static func getHomeNewsTitleData(complectionHandler : @escaping (_ newsTitleArray : [HYHomeTitleModel]) -> ()){
         
-        HttpRequest.get(url: api_home_title, parameters: nil) { (requestReuslt, dict, error) in
+        HttpRequest.get(url: api_home_title, parameters: nil) { (networkModel) in
             
-            let json = JSON(dict as Any);
-            if let dataDict = json["data"]["data"].arrayObject{
+            if networkModel.error != .none { return }
+            
+            let json = JSON(networkModel.data!);
+            if let dataDict = json["data"].arrayObject{
                 
                 var titlesArray = [HYHomeTitleModel]()
                 titlesArray.append(HYHomeTitleModel.deserialize(from: "{\"category\": \"\", \"name\": \"推荐\"}")!)
@@ -28,9 +30,18 @@ class HYHomeNetworkTool: NSObject {
                 
                 complectionHandler(titlesArray)
             }
-            
         }
     }
     
+    static func getHomeNewsDataArray(pageNo : Int, complection : @escaping (_ newsArray : [NewsModel]) -> ()){
+        
+        let params = ["count" : 20,
+                      "list_count" : pageNo]
+        HttpRequest.post(url: api_home_news, parameters: params) { (networkModel) in
+            
+            if networkModel.error != .none { return }
+            
+        }
+    }
     
 }
