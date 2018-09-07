@@ -20,7 +20,6 @@ import MJRefresh
 import MBProgressHUD
 
 
-
 func DLog <T> (_ message : T, file : String = #file, lineNumber : Int = #line) {
     #if DEBUG
     let fileName = (file as NSString).lastPathComponent

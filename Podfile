@@ -16,6 +16,5 @@ pod 'Kingfisher'
 pod 'HandyJSON'
 pod 'YYKit'
 pod 'SGPagingView'
-pod 'ReachabilitySwift'
 
 end
