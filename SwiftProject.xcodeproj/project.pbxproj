@@ -12,6 +12,8 @@
 		B57959F421412FD10019A85A /* HYNetworkStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959F321412FD10019A85A /* HYNetworkStateManager.swift */; };
 		B57959F621420FA90019A85A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959F521420FA80019A85A /* Reachability.swift */; };
 		B57959F82142565E0019A85A /* HYAppStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959F72142565E0019A85A /* HYAppStoreApp.swift */; };
+		B57959FA2152184C0019A85A /* HYCommonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959F92152184C0019A85A /* HYCommonProtocol.swift */; };
+		B57959FC215222290019A85A /* HYCalculateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959FB215222290019A85A /* HYCalculateTool.swift */; };
 		B596AACC213E539700C238EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B596AACB213E539700C238EE /* Assets.xcassets */; };
 		B596AB12213E543900C238EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD8213E543800C238EE /* Const.swift */; };
 		B596AB13213E543900C238EE /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD9213E543800C238EE /* WebApi.swift */; };
@@ -49,6 +51,8 @@
 		B596AB6F2140C21700C238EE /* HYHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB6E2140C21700C238EE /* HYHomeTableViewCell.swift */; };
 		B596AB712140D28D00C238EE /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB702140D28D00C238EE /* NewsModel.swift */; };
 		B596AB7321410BBE00C238EE /* HYNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB7221410BBE00C238EE /* HYNetworkModel.swift */; };
+		B5A6820421533F96009E17C3 /* HYEmojiTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6820321533F96009E17C3 /* HYEmojiTool.swift */; };
+		B5A6820721534A01009E17C3 /* emojis.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5A6820621534A01009E17C3 /* emojis.plist */; };
 		E306B4533CBF56B9BD41A605 /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,8 @@
 		B57959F321412FD10019A85A /* HYNetworkStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYNetworkStateManager.swift; sourceTree = "<group>"; };
 		B57959F521420FA80019A85A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		B57959F72142565E0019A85A /* HYAppStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYAppStoreApp.swift; sourceTree = "<group>"; };
+		B57959F92152184C0019A85A /* HYCommonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCommonProtocol.swift; sourceTree = "<group>"; };
+		B57959FB215222290019A85A /* HYCalculateTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCalculateTool.swift; sourceTree = "<group>"; };
 		B596AAC1213E539500C238EE /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B596AACB213E539700C238EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B596AAD8213E543800C238EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -104,6 +110,8 @@
 		B596AB6E2140C21700C238EE /* HYHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYHomeTableViewCell.swift; sourceTree = "<group>"; };
 		B596AB702140D28D00C238EE /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		B596AB7221410BBE00C238EE /* HYNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYNetworkModel.swift; sourceTree = "<group>"; };
+		B5A6820321533F96009E17C3 /* HYEmojiTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYEmojiTool.swift; sourceTree = "<group>"; };
+		B5A6820621534A01009E17C3 /* emojis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emojis.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +196,7 @@
 		B596AADA213E543800C238EE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B5A682052153448A009E17C3 /* Resource */,
 				B57959EF214127BA0019A85A /* OCTool */,
 				B596AAE5213E543800C238EE /* Category */,
 				B596AADB213E543800C238EE /* ChineseLog */,
@@ -318,6 +327,7 @@
 		B596AAF9213E543900C238EE /* BaseComponent */ = {
 			isa = PBXGroup;
 			children = (
+				B57959F92152184C0019A85A /* HYCommonProtocol.swift */,
 			);
 			path = BaseComponent;
 			sourceTree = "<group>";
@@ -450,9 +460,19 @@
 			children = (
 				B596AB61213F811700C238EE /* TTRefreshHeader.swift */,
 				B57959F72142565E0019A85A /* HYAppStoreApp.swift */,
+				B57959FB215222290019A85A /* HYCalculateTool.swift */,
+				B5A6820321533F96009E17C3 /* HYEmojiTool.swift */,
 				B57959F321412FD10019A85A /* HYNetworkStateManager.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		B5A682052153448A009E17C3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B5A6820621534A01009E17C3 /* emojis.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B596AB1B213E543900C238EE /* data.plist in Resources */,
+				B5A6820721534A01009E17C3 /* emojis.plist in Resources */,
 				B596AACC213E539700C238EE /* Assets.xcassets in Resources */,
 				B596AB2C213E543900C238EE /* Info.plist in Resources */,
 			);
@@ -594,6 +615,7 @@
 				B596AB69213FC4DB00C238EE /* UIView+Extension.swift in Sources */,
 				B596AB15213E543900C238EE /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				B596AB19213E543900C238EE /* API_Provider.swift in Sources */,
+				B57959FC215222290019A85A /* HYCalculateTool.swift in Sources */,
 				B596AB16213E543900C238EE /* NSSet+HYBUnicodeReadable.m in Sources */,
 				B596AB712140D28D00C238EE /* NewsModel.swift in Sources */,
 				B596AB7321410BBE00C238EE /* HYNetworkModel.swift in Sources */,
@@ -609,6 +631,7 @@
 				B596AB5A213E746800C238EE /* HYHomeNetworkTool.swift in Sources */,
 				B596AB28213E543900C238EE /* HYUserModel.swift in Sources */,
 				B596AB20213E543900C238EE /* HYBaseTableViewController.swift in Sources */,
+				B57959FA2152184C0019A85A /* HYCommonProtocol.swift in Sources */,
 				B596AB22213E543900C238EE /* HYBaseModel.swift in Sources */,
 				B596AB2B213E543900C238EE /* AppDelegate.swift in Sources */,
 				B596AB13213E543900C238EE /* WebApi.swift in Sources */,
@@ -625,6 +648,7 @@
 				B596AB17213E543900C238EE /* Foundation+Log.m in Sources */,
 				B596AB27213E543900C238EE /* HYMineViewController.swift in Sources */,
 				B57959F421412FD10019A85A /* HYNetworkStateManager.swift in Sources */,
+				B5A6820421533F96009E17C3 /* HYEmojiTool.swift in Sources */,
 				B596AB26213E543900C238EE /* HYLoginViewController.swift in Sources */,
 				B596AB5C213F684500C238EE /* HYHomeTitleModel.swift in Sources */,
 			);

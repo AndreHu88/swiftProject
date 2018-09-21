@@ -38,6 +38,7 @@ class HttpRequest: NSObject {
         let requestUrl = api_baseUrl + url
         let method = (requestType == .Get) ? HTTPMethod.get : HTTPMethod.post
         //先判断当前的网络是否是通的
+        
     
         Alamofire.request(requestUrl, method: method, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { ( response) in
         

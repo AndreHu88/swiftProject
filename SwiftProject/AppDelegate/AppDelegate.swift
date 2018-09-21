@@ -18,8 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setRootViewController()
         HYNetworkStateManager.networkStatusListener()
+        
+        EmojiManager()
         return true
     }
+    
+    
     
     func setRootViewController(){
         
