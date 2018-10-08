@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setRootViewController()
         HYNetworkStateManager.networkStatusListener()
         
+        //注册通知
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.UIApplicationDidEnterBackground, object: nil)
+        
         EmojiManager()
         return true
     }
@@ -32,6 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = HYTabBarController()
         //        window?.rootViewController = HYLoginViewController()
+    }
+    
+    @objc func notificationAction(notification : Notification){
+        
+        print("receive a notification")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

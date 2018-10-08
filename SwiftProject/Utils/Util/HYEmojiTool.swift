@@ -46,12 +46,36 @@ struct EmojiManager {
         var tempArray = [Emoji]()
         for (index , id) in emojis.enumerated() {
             
-            //插入一个删除
+            //判断每页最后一个添加一个删除按钮
             if index != 0 && index % 20 == 0 {
-                tempArray.append(Emoji(isDelete: true))
+                let emoji : Emoji = Emoji(png : "input_emoji_delete_44x44", isDelete : true)
+                tempArray.append(emoji)
             }
         }
         
+    }
+    
+    func showEmoji(content : String , font : UIFont) -> NSMutableAttributedString {
+        
+        let attributedString = NSMutableAttributedString(string: content)
+        //正则表达式
+        let emojiPattern = "\\[.*?\\]"
+        //创建正则表达式对象
+        let regex = try! NSRegularExpression(pattern: emojiPattern, options: [])
+        // 开始匹配，返回匹配的结果
+        let result = regex.matches(in: content, options: [], range: NSMakeRange(0, content.count))
+        
+        if result.count != 0 {
+            
+            // stride 可以按照
+            for index in stride(from: result.count - 1, through: 0, by: -1) {
+                
+                
+            }
+            
+        }
+        
+        return attributedString;
     }
 }
 
