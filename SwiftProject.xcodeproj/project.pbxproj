@@ -21,7 +21,6 @@
 		B596AB15213E543900C238EE /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = B596AADE213E543800C238EE /* NSDictionary+HYBUnicodeReadable.m */; };
 		B596AB16213E543900C238EE /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = B596AADF213E543800C238EE /* NSSet+HYBUnicodeReadable.m */; };
 		B596AB17213E543900C238EE /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE4213E543800C238EE /* Foundation+Log.m */; };
-		B596AB18213E543900C238EE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE6213E543800C238EE /* ColorExtension.swift */; };
 		B596AB19213E543900C238EE /* API_Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE8213E543800C238EE /* API_Provider.swift */; };
 		B596AB1A213E543900C238EE /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAE9213E543800C238EE /* HttpRequest.swift */; };
 		B596AB1B213E543900C238EE /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B596AAEA213E543800C238EE /* data.plist */; };
@@ -53,6 +52,8 @@
 		B596AB7321410BBE00C238EE /* HYNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AB7221410BBE00C238EE /* HYNetworkModel.swift */; };
 		B5A6820421533F96009E17C3 /* HYEmojiTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6820321533F96009E17C3 /* HYEmojiTool.swift */; };
 		B5A6820721534A01009E17C3 /* emojis.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5A6820621534A01009E17C3 /* emojis.plist */; };
+		B5A68209216C4087009E17C3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A68208216C4087009E17C3 /* UIColor+Extension.swift */; };
+		B5A6820B216C4154009E17C3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6820A216C4154009E17C3 /* UIImage+Extension.swift */; };
 		E306B4533CBF56B9BD41A605 /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57063636C2041D94F073D1CE /* Pods_SwiftProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +80,6 @@
 		B596AAE1213E543800C238EE /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		B596AAE2213E543800C238EE /* NSSet+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		B596AAE4213E543800C238EE /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
-		B596AAE6213E543800C238EE /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B596AAE8213E543800C238EE /* API_Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Provider.swift; sourceTree = "<group>"; };
 		B596AAE9213E543800C238EE /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		B596AAEA213E543800C238EE /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
@@ -112,6 +112,8 @@
 		B596AB7221410BBE00C238EE /* HYNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYNetworkModel.swift; sourceTree = "<group>"; };
 		B5A6820321533F96009E17C3 /* HYEmojiTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYEmojiTool.swift; sourceTree = "<group>"; };
 		B5A6820621534A01009E17C3 /* emojis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emojis.plist; sourceTree = "<group>"; };
+		B5A68208216C4087009E17C3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B5A6820A216C4154009E17C3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,11 +242,12 @@
 		B596AAE5213E543800C238EE /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				B596AAE6213E543800C238EE /* ColorExtension.swift */,
 				B596AB68213FC4DB00C238EE /* UIView+Extension.swift */,
 				B596AB6A213FC72600C238EE /* NSDate+Extension.swift */,
 				B596AB6C213FD08500C238EE /* UIImageView+Extension.swift */,
+				B5A6820A216C4154009E17C3 /* UIImage+Extension.swift */,
 				B57959ED214120310019A85A /* MBProgressHUD+Extension.swift */,
+				B5A68208216C4087009E17C3 /* UIColor+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -569,6 +573,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -625,6 +630,7 @@
 				B57959F2214127E80019A85A /* JRToast.m in Sources */,
 				B596AB12213E543900C238EE /* Const.swift in Sources */,
 				B596AB21213E543900C238EE /* HYBaseNavController.swift in Sources */,
+				B5A68209216C4087009E17C3 /* UIColor+Extension.swift in Sources */,
 				B596AB14213E543900C238EE /* NSArray+HYBUnicodeReadable.m in Sources */,
 				B596AB1A213E543900C238EE /* HttpRequest.swift in Sources */,
 				B596AB2A213E543900C238EE /* HYLoginView.swift in Sources */,
@@ -638,7 +644,7 @@
 				B596AB1E213E543900C238EE /* HYTabBarController.swift in Sources */,
 				B57959EE214120310019A85A /* MBProgressHUD+Extension.swift in Sources */,
 				B596AB1C213E543900C238EE /* HYBaseTableView.swift in Sources */,
-				B596AB18213E543900C238EE /* ColorExtension.swift in Sources */,
+				B5A6820B216C4154009E17C3 /* UIImage+Extension.swift in Sources */,
 				B596AB1F213E543900C238EE /* HYBaseWebViewController.swift in Sources */,
 				B57959F82142565E0019A85A /* HYAppStoreApp.swift in Sources */,
 				B596AB6D213FD08500C238EE /* UIImageView+Extension.swift in Sources */,
@@ -781,10 +787,7 @@
 				DEVELOPMENT_TEAM = 44G4TBW28S;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftProject/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dun.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftProject/Config/SwiftProject-Bridging-Header.h";
@@ -803,10 +806,7 @@
 				DEVELOPMENT_TEAM = 44G4TBW28S;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftProject/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dun.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftProject/Config/SwiftProject-Bridging-Header.h";

@@ -32,12 +32,20 @@ class HYHomeViewController: HYBaseViewController {
             
             for titleModel : HYHomeTitleModel in homeNewsTitleArray {
                 
-                if titleModel.category == .recommend {
+                switch titleModel.category {
+                    
+                case .recommend :
+                    let recommendVC = HYHomeRecommendVC()
+                    recommendVC.newsTitleModel = titleModel
+                    recommendVC.setupRefresh(category: .recommend)
+                    self.addChildViewController(recommendVC);
+                default :
                     let recommendVC = HYHomeRecommendVC()
                     recommendVC.newsTitleModel = titleModel
                     recommendVC.setupRefresh(category: .recommend)
                     self.addChildViewController(recommendVC);
                 }
+                
             }
             
             self.pageContentView = SGPageContentView(frame: CGRect(x: 0, y: 48, width: kScreenWidth, height: self.view.height - 48), parentVC: self, childVCs: self.childViewControllers)
@@ -58,6 +66,6 @@ extension HYHomeViewController : SGPageTitleViewDelegate, SGPageContentViewDeleg
     }
     
     func pageContentView(_ pageContentView: SGPageContentView!, progress: CGFloat, originalIndex: Int, targetIndex: Int) {
-        
+        self.pageTitleView?.setPageTitleViewWithProgress(progress, originalIndex: originalIndex, targetIndex: targetIndex)
     }
 }

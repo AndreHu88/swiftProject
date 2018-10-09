@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //注册通知
         NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.UIApplicationDidEnterBackground, object: nil)
         
-        EmojiManager()
+       
+        
         return true
     }
     
@@ -35,6 +36,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = HYTabBarController()
         //        window?.rootViewController = HYLoginViewController()
+    }
+    
+    func setupKeyboardManager() {
+        
+        IQKeyboardManager.shared().isEnableAutoToolbar = true
+        
+        UIView.animate(withDuration: 1, animations: {
+            
+        }) { (_) in
+            
+            
+        }
+    }
+    
+    func setupGlobalStyle() {
+        
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+        
     }
     
     @objc func notificationAction(notification : Notification){

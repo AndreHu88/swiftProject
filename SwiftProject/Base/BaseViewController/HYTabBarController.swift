@@ -29,14 +29,19 @@ class HYTabBarController: UITabBarController {
         addChildViewController(navVC)
     }
     
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+}
 
-   
+extension HYTabBarController : UITabBarControllerDelegate {
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        
+    }
+    
 
 }

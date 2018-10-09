@@ -25,14 +25,24 @@ class HYHomeTableViewController: HYBaseTableViewController {
         
         let refreshHeader = TTRefreshHeader {
             
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            
+                JRToast.show(withText: "下拉刷新成功")
+                self.tableView.mj_header.endRefreshing()
+            }
+        }
+        
+        let refreshFooter = TTRefreshFooter {
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+                JRToast.show(withText: "上拉加载成功")
+                self.tableView.mj_footer.endRefreshing()
+            })
         }
         
         refreshHeader?.lastUpdatedTimeLabel.isHidden = true
         self.tableView.mj_header = refreshHeader;
         
-        let refreshFooter = TTRefreshFooter {
-            
-        }
         refreshFooter?.isAutomaticallyChangeAlpha = true;
         self.tableView.mj_footer = refreshFooter;
         

@@ -64,8 +64,7 @@ class TTRefreshFooter : MJRefreshAutoGifFooter {
         
         super.placeSubviews()
         gifView.contentMode = .center
-        gifView.centerX = self.centerX
+        gifView.left = kAdaptedWidth(135)
         gifView.centerY = stateLabel.centerY
-        stateLabel.isHidden = true
     }
 }

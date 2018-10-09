@@ -11,5 +11,6 @@
 
 
 #import "JRToast.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 #endif /* SwiftProject_bridging_Header_h */

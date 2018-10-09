@@ -1,12 +1,12 @@
 //
-//  ColorExtension.swift
-//  Token_Swift
+//  UIColor+Extension.swift
+//  SwiftProject
 //
-//  Created by Duntech on 2018/9/4.
+//  Created by Duntech on 2018/10/9.
 //  Copyright © 2018年 Duntech. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 extension UIColor {
     
@@ -20,7 +20,7 @@ extension UIColor {
      - returns: 返回rgb颜色对象，alpha默认1
      */
     class func colorWithRGB(_ r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat = 1.0) -> UIColor {
-        return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)
+        return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
     }
     
     /**
@@ -29,7 +29,6 @@ extension UIColor {
      - returns: 返回随机色
      */
     class func randomColor() -> UIColor {
-        
         let r = CGFloat(arc4random_uniform(256))
         let g = CGFloat(arc4random_uniform(256))
         let b = CGFloat(arc4random_uniform(256))
@@ -66,7 +65,7 @@ extension UIColor {
         return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
     }
     
-    /// 16进制转UIColor
+    /// 16禁止转UIColor
     ///
     /// - Parameters:
     ///   - hex: 16进制
@@ -106,7 +105,5 @@ extension UIColor {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
-    
     }
-    
 }
