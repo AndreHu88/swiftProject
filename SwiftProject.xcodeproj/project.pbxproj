@@ -14,6 +14,7 @@
 		B57959F82142565E0019A85A /* HYAppStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959F72142565E0019A85A /* HYAppStoreApp.swift */; };
 		B57959FA2152184C0019A85A /* HYCommonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959F92152184C0019A85A /* HYCommonProtocol.swift */; };
 		B57959FC215222290019A85A /* HYCalculateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57959FB215222290019A85A /* HYCalculateTool.swift */; };
+		B580FCE7216DFEA000449A92 /* HYCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580FCE6216DFEA000449A92 /* HYCustomTabBar.swift */; };
 		B596AACC213E539700C238EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B596AACB213E539700C238EE /* Assets.xcassets */; };
 		B596AB12213E543900C238EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD8213E543800C238EE /* Const.swift */; };
 		B596AB13213E543900C238EE /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596AAD9213E543800C238EE /* WebApi.swift */; };
@@ -69,6 +70,7 @@
 		B57959F72142565E0019A85A /* HYAppStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYAppStoreApp.swift; sourceTree = "<group>"; };
 		B57959F92152184C0019A85A /* HYCommonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCommonProtocol.swift; sourceTree = "<group>"; };
 		B57959FB215222290019A85A /* HYCalculateTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCalculateTool.swift; sourceTree = "<group>"; };
+		B580FCE6216DFEA000449A92 /* HYCustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCustomTabBar.swift; sourceTree = "<group>"; };
 		B596AAC1213E539500C238EE /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B596AACB213E539700C238EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B596AAD8213E543800C238EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			children = (
 				B596AAF2213E543900C238EE /* HYBaseViewController.swift */,
 				B596AAF3213E543900C238EE /* HYTabBarController.swift */,
+				B580FCE6216DFEA000449A92 /* HYCustomTabBar.swift */,
 				B596AAF4213E543900C238EE /* HYBaseWebViewController.swift */,
 				B596AAF5213E543900C238EE /* HYBaseTableViewController.swift */,
 				B596AAF6213E543900C238EE /* HYBaseNavController.swift */,
@@ -641,6 +644,7 @@
 				B596AB22213E543900C238EE /* HYBaseModel.swift in Sources */,
 				B596AB2B213E543900C238EE /* AppDelegate.swift in Sources */,
 				B596AB13213E543900C238EE /* WebApi.swift in Sources */,
+				B580FCE7216DFEA000449A92 /* HYCustomTabBar.swift in Sources */,
 				B596AB1E213E543900C238EE /* HYTabBarController.swift in Sources */,
 				B57959EE214120310019A85A /* MBProgressHUD+Extension.swift in Sources */,
 				B596AB1C213E543900C238EE /* HYBaseTableView.swift in Sources */,
@@ -787,7 +791,10 @@
 				DEVELOPMENT_TEAM = 44G4TBW28S;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftProject/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dun.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftProject/Config/SwiftProject-Bridging-Header.h";
@@ -806,7 +813,10 @@
 				DEVELOPMENT_TEAM = 44G4TBW28S;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftProject/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dun.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftProject/Config/SwiftProject-Bridging-Header.h";

@@ -9,11 +9,41 @@
 import UIKit
 
 class HYVideoViewController: HYBaseViewController {
+    
+    
+    lazy var collectionView : UICollectionView = {
+        
+        let flowLayout = UICollectionViewFlowLayout()
+        let itemWidth : CGFloat = (kScreenWidth - kAdaptedWidth(20)) / 2
+        let itemHeight : CGFloat = itemWidth * (kScreenHeight / kScreenWidth)
+        flowLayout.itemSize = CGSize(width: itemWidth, height: itemHeight)
+        flowLayout.sectionInset = UIEdgeInsets(top: kAdaptedWidth(5), left: kAdaptedWidth(5), bottom: kAdaptedWidth(5), right: kAdaptedWidth(5))
+        
+        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UICollectionViewCell.classForCoder(), forCellWithReuseIdentifier: UICollectionViewCell.className())
+        return collectionView
+    }()
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupSubview()
+        setupMasonryLayout()
+    }
+    
+    func setupSubview() {
+        
+        self.view.addSubview(self.collectionView)
+    }
+    
+    func setupMasonryLayout() {
+        
+        self.collectionView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.view)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +52,27 @@ class HYVideoViewController: HYBaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+  
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+
+extension HYVideoViewController: UICollectionViewDelegate , UICollectionViewDataSource {
+    
+    
+    // MARK: - DataSource
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: UICollectionViewCell.className(), for: indexPath)
+        cell.backgroundColor = UIColor.randomColor()
+        return cell
+    }
+    
+    // MARK: - Delegate
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
 }

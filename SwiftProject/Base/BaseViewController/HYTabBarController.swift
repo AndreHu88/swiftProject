@@ -9,16 +9,31 @@
 import UIKit
 
 class HYTabBarController: UITabBarController {
+    
+    lazy var customTabBar : HYCustomTabBar = {
+        
+        let customTabBar = HYCustomTabBar(frame: self.tabBar.frame)
+        return customTabBar
+    }()
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        self.tabBar.tintColor = kAppNavigationBarTintColor
+        setupCustomTabBar()
+        setupAllChildVC()
+    }
+    
+    func setupAllChildVC() {
+        
         setChildViewController(HYHomeViewController(), title: "首页", imageName: "home_tabbar_32x32_", selectImageName: "home_tabbar_press_32x32_")
         setChildViewController(HYVideoViewController(), title: "视频", imageName: "huoshan_tabbar_32x32_", selectImageName: "huoshan_tabbar_press_32x32_")
         setChildViewController(HYMineViewController(), title: "个人中心", imageName: "mine_tabbar_32x32_", selectImageName: "mine_tabbar_press_32x32_")
     }
     
+    func setupCustomTabBar() {
+        
+        self.setValue(customTabBar, forKey: "tabBar")
+    }
     
     func setChildViewController(_ childVC: UIViewController, title : String, imageName : String, selectImageName : String) {
     

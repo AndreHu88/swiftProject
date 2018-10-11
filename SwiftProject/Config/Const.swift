@@ -27,6 +27,12 @@ func DLog <T> (_ message : T, file : String = #file, lineNumber : Int = #line) {
     #endif
 }
 
+// 国际化字符串
+func KLocalString(_ key : String) -> String {
+    
+   return NSLocalizedString(key, comment: "")
+}
+
 // MARK: - 屏幕信息
 /// 屏幕的宽度
 let kScreenWidth = UIScreen.main.bounds.width
